@@ -16,8 +16,9 @@ class TripListOptions extends React.Component {
   }
 
   handleDuration(type, value){
-    console.log('Changing duration', type, value);
-    // TODO - use action dispatcher from props
+    if(value != '') {
+      this.props.changeDuration(type, value);
+    }
   }
 
   handleSearch(phrase){
@@ -32,7 +33,7 @@ class TripListOptions extends React.Component {
           <Col lg={4}>
             <div className={styles.filter}>
               <label>
-                <input className={`${styles.input} ${styles.search}`} type='text' placeholder='Search...' value={filters.phrase} onChange={event => this.handleSearch(event.currentTarget.value)} />
+                <input className={`${styles.input} ${styles.search}`} type='text' placeholder='Search...' value={filters.searchPhrase} onChange={event => this.handleSearch(event.currentTarget.value)} />
               </label>
             </div>
           </Col>
@@ -73,6 +74,7 @@ TripListOptions.propTypes = {
   tags: PropTypes.object,
   filters: PropTypes.object,
   changeSearchPhrase: PropTypes.func,
+  changeDuration: PropTypes.func,
 };
 
 export default TripListOptions;
