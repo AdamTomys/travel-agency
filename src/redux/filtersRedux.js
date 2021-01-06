@@ -35,7 +35,6 @@ export const markTagUnchecked = index => ({ payload: index, type: CHANGE_TAG_STA
 
 // reducer
 export default function reducer(statePart = [], action = {}) {
-  // const array = [];
   switch (action.type) {
     case CHANGE_PHRASE:
       return {
@@ -70,7 +69,6 @@ export default function reducer(statePart = [], action = {}) {
       // eslint-disable-next-line no-case-declarations
       const statePartCopy = [...statePart.tags];
       statePartCopy.splice(action.payload, 1);
-      console.log(statePartCopy);
       return {
         ...statePart,
         tags: statePartCopy,

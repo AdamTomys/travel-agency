@@ -20,14 +20,8 @@ export const getFilteredTrips = ({trips, filters}) => {
       output = output.filter(trip => trip.tags.includes(tag));
     }
   }
-  
-  const array = output.sort((a, b) => parseInt(a.cost.substr(1).replace(',', '')) > parseInt(b.cost.substr(1).replace(',', '')));
-  console.log(array);
-  // console.log(parseInt(array[0].cost.substr(1).replace(',', '')));
-  // console.log(parseInt(array[1].cost.substr(1).replace(',', '')));
-  sortTrips(array);
 
-  return output.sort((a, b) => parseInt(a.cost.substr(1).replace(',', '')) > parseInt(b.cost.substr(1).replace(',', '')));
+  return output.sort((a, b) => parseInt(b.cost.substr(1).replace(',', '')) - parseInt(a.cost.substr(1).replace(',', '')));
 };
 
 export const getTripById = ({trips}, tripId) => {
@@ -46,25 +40,20 @@ export const getTripsForCountry = ({trips}, countryCode) => {
 
 /* ACTIONS */
 
+/*
 // action name creator
 const reducerName = 'trips';
 const createActionName = name => `app/${reducerName}/${name}`;
 
 // action types
-const EXAMPLE = createActionName('EXAMPLE');
 
 // action creators
-const sortTrips = state => ({ payload: state, type: EXAMPLE});
 
 // reducer
 export default function reducer(statePart = [], action = {}) {
   switch (action.type) {
-    case EXAMPLE:
-      console.log(statePart);
-      return {
-        ...statePart,
-      };
     default:
       return statePart;
   }
 }
+*/
