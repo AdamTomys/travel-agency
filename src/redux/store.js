@@ -3,6 +3,7 @@ import tripList from '../data/trips.json';
 
 import globalReducer from './globalRedux';
 import filtersReducer from './filtersRedux';
+import orderReucer from './orderRedux';
 
 // define initial state and shallow-merge initial data
 const initialState = {
@@ -19,11 +20,17 @@ const initialState = {
       to: 14,
     },
   },
+  order: {
+    trip: null,
+    email: '',
+    options: {},
+  },
 };
 
 // define reducers
 const reducers = {
   filters: filtersReducer,
+  order: orderReucer,
 };
 
 // add blank reducers for initial state properties without reducers
