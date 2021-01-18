@@ -1,0 +1,147 @@
+{
+  "orders": [
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$139,399",
+      "id": 1
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": [
+        "kitchen",
+        "pool"
+      ],
+      "adults": "2",
+      "children": 0,
+      "name": "Adam",
+      "contact": "531992888",
+      "start-date": "2021-01-21T23:00:00.000Z",
+      "totalCost": "$283,197",
+      "id": 2
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$139,399",
+      "id": 3
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 4
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 5
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "",
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 6
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "2021-01-20T23:00:00.000Z",
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 7
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "2021-01-27T23:00:00.000Z",
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 8
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "2021-01-26",
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 9
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": "2021-01-28",
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 10
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "",
+      "contact": "",
+      "start-date": null,
+      "totalCost": "$139,399",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "id": 11
+    }
+  ]
+}

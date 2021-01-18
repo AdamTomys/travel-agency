@@ -1,15 +1,20 @@
 import React from 'react';
 import styles from './OrderOption.scss';
+import PropTypes from 'prop-types';
 import OrderOptionDropdown from './OrderOptionDropdown';
 import OrderOptionIcons from './OrderOptionIcons';
 import OrderOptionCheckboxes from './OrderOptionCheckboxes';
 import OrderOptionNumber from './OrderOptionNumber';
+import OrderOptionText from './OrderOptionText';
+import OrderOptionDate from './OrderOptionDate';
 
 const optionTypes = {
   dropdown: OrderOptionDropdown,
   icons: OrderOptionIcons,
   checkboxes: OrderOptionCheckboxes,
   number: OrderOptionNumber,
+  text: OrderOptionText,
+  date: OrderOptionDate,
 };
 
 const OrderOption = ({id, setOrderOption, name, type, ...otherProps}) => {
@@ -27,7 +32,8 @@ const OrderOption = ({id, setOrderOption, name, type, ...otherProps}) => {
 };
 
 OrderOption.propTypes = {
-
+  name: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default OrderOption;

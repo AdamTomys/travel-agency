@@ -50,6 +50,7 @@ const devConfig = () => ({
       },
     ],
   },
+  devtool: 'source-map',
 });
 
 const prodConfig = () => ({

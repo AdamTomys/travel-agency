@@ -15,11 +15,7 @@ const OrderOptionIcons = ({values, setOptionValue, required, currentValue}) => {
       )}
       {values.map(value => {
         return (
-          <div className={currentValue == value.id ? styles.icon + ' ' + styles.iconActive : styles.icon} key={value.id} onClick={event => {
-            event.preventDefault();
-            return (
-              setOptionValue(value.id)
-            );}}>
+          <div className={currentValue == value.id ? styles.icon + ' ' + styles.iconActive : styles.icon} key={value.id} onClick={() => (setOptionValue(value.id))}>
             <Icon name={value.icon}/>
             {value.name + ' ' + formatPrice(value.price)}
           </div>
